@@ -10,10 +10,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        bt_evento.setOnClickListener {
-            val event = EventFactory().getButtonEvent()
-            Analytics.instance.trackEvent(event)
+        bt_evento_i.setOnClickListener { onButtonIClicked() }
 
-        }
+        bt_evento_ii.setOnClickListener { onButtonIIClicked() }
+    }
+
+    private fun onButtonIIClicked() {
+        val event = EventFactory().getButtonEventII()
+        trackEvent(event)
+    }
+
+    private fun onButtonIClicked() {
+        val event = EventFactory().getButtonEventI()
+        trackEvent(event)
+    }
+
+    private fun trackEvent(event: Event) {
+        Analytics.instance.trackEvent(event)
     }
 }

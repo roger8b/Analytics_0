@@ -11,6 +11,9 @@ class MyApp : Application(){
 
         val fireBaseTracker: Tracker = FireBaseTracker()
         fireBaseTracker.subscribeOnEventStream()
+
+        val anyBaseTracker: Tracker = AnyBaseTracker()
+        anyBaseTracker.subscribeOnEventStream()
     }
 
 
