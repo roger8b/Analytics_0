@@ -1,4 +1,4 @@
-package br.com.r8b.analytics_0
+package br.com.r8b.analytics_0.analytics
 
 import io.reactivex.Observable
 import io.reactivex.subjects.PublishSubject

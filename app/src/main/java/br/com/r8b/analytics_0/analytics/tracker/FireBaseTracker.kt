@@ -1,6 +1,7 @@
-package br.com.r8b.analytics_0
+package br.com.r8b.analytics_0.analytics.tracker
 
 import android.util.Log
+import br.com.r8b.analytics_0.analytics.Analytics
 import io.reactivex.disposables.Disposable
 
 class FireBaseTracker : Tracker {

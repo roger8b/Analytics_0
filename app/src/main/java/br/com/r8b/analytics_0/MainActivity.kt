@@ -2,6 +2,9 @@ package br.com.r8b.analytics_0
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import br.com.r8b.analytics_0.analytics.Analytics
+import br.com.r8b.analytics_0.analytics.Event
+import br.com.r8b.analytics_0.analytics.EventFactory
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
